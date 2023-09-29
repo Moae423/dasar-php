@@ -1,3 +1,6 @@
+<?php 
+include 'function/connection.php'
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -6,7 +9,7 @@
     <title>Add data</title>
   </head>
   <body>
-    <form action="" method="post">
+    <form action="function/tambah.php" method="post">
       <table border="1" cellpadding="6" cellspacing="0">
         <tr>
           <th><label for="">NIM </label></th>
@@ -25,7 +28,7 @@
           <td><input type="email" name="email" id="" /></td>
         </tr>
       </table>
-      <button type="submit">Save</button>
+      <button type="submit" name="save">Save</button>
     </form>
   </body>
 </html>
